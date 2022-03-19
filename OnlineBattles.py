@@ -117,7 +117,7 @@ IVs: 0 Atk
 #     #Play a game on the ladder
 #     await player.ladder(1)
 
-     print("Simple Heuristic Player")
+#     print("Simple Heuristics Player")
 
      player = SimpleHeuristicsPlayer(
            battle_format="gen8ou", team=team, max_concurrent_battles=1,            
