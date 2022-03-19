@@ -9,7 +9,7 @@ from poke_env.server_configuration import ShowdownServerConfiguration
 
 sys.path.append("./showdown_agent")
 
-from MaxDamagePlayer import MaxDamagePlayer
+#from MaxDamagePlayer import MaxDamagePlayer
 from SmartDamagePlayer import SmartDamagePlayer
 from MiniMax import MinimaxPlayer
 from poke_env.player.baselines import SimpleHeuristicsPlayer
@@ -47,25 +47,25 @@ async def main():
     # Play a game on the ladder
     #await player.ladder(1)
 
-    #print("Minimax Player")
+    print("Minimax Player")
 
-    #player = MinimaxPlayer(
-    #        player_configuration=PlayerConfiguration("RemptonGames", "Cwalrus96!"),
-    #        server_configuration=ShowdownServerConfiguration
-    #)
-
-    # Play a game on the ladder
-    #await player.ladder(1)
-
-    print("Simple Heuristic Player")
-
-    player = SimpleHeuristicsPlayer(
-            player_configuration=PlayerConfiguration("RemptonGames", "Cwalrus96!"),
-            server_configuration=ShowdownServerConfiguration
+    player = MinimaxPlayer(
+           player_configuration=PlayerConfiguration("LeadNitrate", "anchit@123"),
+           server_configuration=ShowdownServerConfiguration
     )
 
-    # Play a game on the ladder
+    #Play a game on the ladder
     await player.ladder(1)
+
+#     print("Simple Heuristic Player")
+
+#     player = SimpleHeuristicsPlayer(
+#             player_configuration=PlayerConfiguration("RemptonGames", "Cwalrus96!"),
+#             server_configuration=ShowdownServerConfiguration
+#     )
+
+#     # Play a game on the ladder
+#     await player.ladder(1)
 
 
 if __name__ == "__main__": 
