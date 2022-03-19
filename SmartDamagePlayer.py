@@ -7,7 +7,7 @@ sys.path.append("..")
 
 import BattleUtilities
 from poke_env.player.random_player import RandomPlayer
-from MaxDamagePlayer import MaxDamagePlayer
+#from MaxDamagePlayer import MaxDamagePlayer
 from poke_env.player.player import Player
 from poke_env.player.baselines import SimpleHeuristicsPlayer
 from poke_env.environment.move_category import MoveCategory
