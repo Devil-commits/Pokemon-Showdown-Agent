@@ -15,7 +15,7 @@ from MiniMax import MinimaxPlayer
 from poke_env.player.baselines import SimpleHeuristicsPlayer
 
 async def main(): 
-    team_1 = """
+    team = """
 Pelipper @ Damp Rock  
 Ability: Drizzle  
 EVs: 248 HP / 8 Def / 252 SpD  
