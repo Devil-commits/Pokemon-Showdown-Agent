@@ -22,7 +22,7 @@ from poke_env.environment.pokemon import Pokemon
 class MinimaxPlayer(Player): 
 
     previous_action = None
-    maxDepth = 1 
+    maxDepth = 4 
     # The nodes keep track of battle states, moves are transitions between states
     def choose_move(self, battle):
         # HP values for you and your opponent's Pokemon are a dictionary that maps Pokemon to HP
