@@ -106,9 +106,20 @@ IVs: 0 Atk
     # Play a game on the ladder
     #await player.ladder(1)
 
-    print("Minimax Player")
+#     print("Minimax Player")
 
-    player = MinimaxPlayer(
+#     player = MinimaxPlayer(
+#            battle_format="gen8ou", team=team, max_concurrent_battles=1,            
+#            player_configuration=PlayerConfiguration("LeadNitrate", "anchit@123"),
+#            server_configuration=ShowdownServerConfiguration
+#     )
+
+#     #Play a game on the ladder
+#     await player.ladder(1)
+
+     print("Simple Heuristic Player")
+
+     player = SimpleHeuristicsPlayer(
            battle_format="gen8ou", team=team, max_concurrent_battles=1,            
            player_configuration=PlayerConfiguration("LeadNitrate", "anchit@123"),
            server_configuration=ShowdownServerConfiguration
@@ -116,16 +127,6 @@ IVs: 0 Atk
 
     #Play a game on the ladder
     await player.ladder(1)
-
-#     print("Simple Heuristic Player")
-
-#     player = SimpleHeuristicsPlayer(
-#             player_configuration=PlayerConfiguration("RemptonGames", "Cwalrus96!"),
-#             server_configuration=ShowdownServerConfiguration
-#     )
-
-#     # Play a game on the ladder
-#     await player.ladder(1)
 
 
 if __name__ == "__main__": 
